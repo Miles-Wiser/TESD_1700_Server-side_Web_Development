@@ -40,9 +40,10 @@ p {
     body {
         display: grid;
         grid-template-areas: 
-        "header header aside"
-        "main main aside"
-        "footer footer aside";
+        "header header header"
+        "aside main main"
+        "aside footer footer";
+        grid-template-columns: 1fr 7fr;
     }
 
     header { grid-area: header; }
