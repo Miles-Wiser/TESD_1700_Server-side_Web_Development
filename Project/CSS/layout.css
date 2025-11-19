@@ -1,7 +1,28 @@
+
+header {
+    background-color: rgb(27, 27, 27);
+}
+
+/* footer Styles */
+    footer {
+        background-color: rgb(27, 27, 27);
+    }
+
+/* a Styles */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: gray;
+}
 /* ===============
     Phone Devices
    =============== */
 @media only screen and (max-width: 640px) {
+    body {
+        margin: 15px;
+    }
 }
 
 /* ===================
