@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dave's Music Store</title>
-    <link href="../Project/CSS/layout.css" rel="stylesheet">
+    <title>Dave's Music Store | Sign-In</title>
+    <link href="../Project/CSS/light-dark.css" rel="stylesheet">
+    <link href="../Project/CSS/sign-in.css" rel="stylesheet">
     <script src="../Project/CSS/li_da_mode.js" defer></script>
 </head>
 
@@ -18,18 +19,38 @@
             <a href="catalog.html">Catalog</a>
             <a href="#">Service and Repair</a>
             <a href="sign-in.html">Sign-In</a>
+            <button class="btn-LiDaToggle">Light/Dark Mode</button>
         </nav>
-        <button class="btn-LiDaToggle">Light/Dark Mode</button>
     </header>
 
     <main>
-        placeholder
-    </main>
+        <form action="" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input id="username" type="text" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" pattern="[A-Z, a-z, 0-9]{6,10}" required>
 
-    <aside>
-        <h2>Aside</h2>
-        <p>Stuff Here</p>
-    </aside>
+                <input id="chPassword" type="checkbox" onclick="showPassword()">
+                <label for="chPassword">Show Password</label>
+                <script defer>
+                    function showPassword() {
+                        var x = document.getElementById("password");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </main>
 
     <footer>
         <div class="nav-footer" id="container-greeting">

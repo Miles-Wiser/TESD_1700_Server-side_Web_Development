@@ -1,0 +1,24 @@
+/* ===============
+    Phone Devices
+   =============== */
+@media only screen and (max-width: 640px) {
+}
+
+/* ===================
+    Computers/Tablets
+   =================== */
+@media only screen and (min-width: 641px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "aside footer footer";
+        grid-template-columns: 1fr 7fr;
+    }
+
+    header { grid-area: header; }
+    main { grid-area: main; }
+    aside { grid-area: aside; }
+    footer { grid-area: footer; }
+}
