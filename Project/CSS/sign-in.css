@@ -1,8 +1,16 @@
-/* main {
+body {
     display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    /* height: 35%; */
+    display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
-} */
+}
 
 /* ===============
     Phone Devices
