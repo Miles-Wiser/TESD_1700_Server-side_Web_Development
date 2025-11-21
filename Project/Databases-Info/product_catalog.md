@@ -91,7 +91,7 @@
     </tr>
     <tr>
         <td>Jupiter 1600i Bb Trumpet</td>
-        <td>3109</td>
+        <td>3109.00</td>
         <td>Trumpet</td>
         <td>Jupiter</td>
         <td>Yellow Gold</td>
