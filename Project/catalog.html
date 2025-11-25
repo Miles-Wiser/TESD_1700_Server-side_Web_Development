@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="header-logo">
-            <img src="../Project/Images/daves-music-store-logo.png" alt="Dave's Music Store Logo" height="100px">
+            <img src="../Project/Images/daves-music-store-logo.png" alt="Dave's Music Store Logo">
             <h1>Dave's Music Store</h1>
         </div>
         <nav id="nav-header">
@@ -36,37 +36,73 @@
                 <img src="../Project/Databases-Info/om_student_bari.jpg" alt="O'Malley Student Baritone">
                 <figcaption>O'Malley Student 3/4 Baritone</figcaption>
             </figure>
-            <p>$739.00</p>
-            <input class="btnAddToCart" type="submit" name="om-student-bari" value="Add To Cart">
-            
+            <div>
+                <p>$739.00</p>
+                <input class="btnAddToCart" type="submit" name="om-student-bari" value="Add To Cart">
+            </div>
         </div>
         <div class="container-product">
             <figure>
                 <img src="../Project/Databases-Info/jp_marching_bari.jpg" alt="John Packer Marching Baritone">
                 <figcaption>John Packer Marching Baritone JP2053</figcaption>
             </figure>
-            <p>$2201.00</p>
-            <input class="btnAddToCart" type="submit" name="jp-marching-bari" value="Add To Cart">
+            <div>
+                <p>$2201.00</p>
+                <input class="btnAddToCart" type="submit" name="jp-marching-bari" value="Add To Cart">
+            </div>
         </div>
         <div class="container-product">
             <figure>
                 <img src="../Project/Databases-Info/om_Bb_trom.jpg" alt="O'Malley Bb ContraBass Trombone">
                 <figcaption>O'Malley Bb Contrabass Trombone Bb/F</figcaption>
             </figure>
-            <p>$3729.00</p>
-            <input class="btnAddToCart" type="submit" name="om-contrabass-trom" value="Add To Cart">
+            <div>
+                <p>$3729.00</p>
+                <input class="btnAddToCart" type="submit" name="om-contrabass-trom" value="Add To Cart">
+            </div>
         </div>
         <div class="container-product">
             <figure>
                 <img src="../Project/Databases-Info/ju_1600i_trum.jpg" alt="Jupiter 1600i Bb Trumpet">
                 <figcaption>Jupiter 1600i Bb Trumpet</figcaption>
             </figure>
-            <p>$3109.00</p>
-            <input class="btnAddToCart" type="submit" name="ju-1600i-trum" value="Add To Cart">
+            <div>
+                <p>$3109.00</p>
+                <input class="btnAddToCart" type="submit" name="ju-1600i-trum" value="Add To Cart">
+            </div>
         </div>
     </main>
 
     <aside>
+        <div class="filter">
+            <h4>Family</h4>
+            <ul id="list-family">
+                <li>
+                    <input id="brasswind" name="brasswind" type="checkbox">
+                    <label for="brasswind">Brasswind</label>
+                </li>
+                <li>
+                    <input id="equipment" name="equipment" type="checkbox">
+                    <label for="equipment">Equipment</label>
+                </li>
+                <li><input id="percussion" name="percussion" type="checkbox">
+                    
+                    <label for="percussion">Percussion</label>
+                </li>
+                <li>
+                    <input id="piano" name="piano" type="checkbox">
+                    <label for="piano">Piano</label>
+                </li>
+                <li>
+                    <input id="string" name="string" type="checkbox">
+                    <label for="string">String</label>
+                </li>
+                <li>
+                    <input id="woodwind" name="woodwind" type="checkbox">
+                    <label for="woodwind">Woodwind</label>
+                </li>
+            </ul>
+        </div>
         <div class="filter">
             <h4>Color</h4>
             <ul id="list-color">

@@ -2,6 +2,7 @@
     <tr>
         <th>Name</th>
         <th>Price ($)</th>
+        <th>Family</th>
         <th>Type</th>
         <th>Brand</th>
         <th>Color</th>
@@ -11,6 +12,7 @@
     <tr>
         <td>O'Malley Student 3/4 Baritone</td>
         <td>739.00</td>
+        <td>Brass</td>
         <td>Baritone</td>
         <td>O'Malley</td>
         <td>Yellow Brass</td>
@@ -20,6 +22,7 @@
     <tr>
         <td>John Packer Marching Baritone JP2053</td>
         <td>2201.00</td>
+        <td>Brass</td>
         <td>Baritone</td>
         <td>John Packer</td>
         <td>Silver</td>
@@ -29,6 +32,7 @@
     <tr>
         <td>John Packer JP173 MKII Baritone Horn</td>
         <td>1227.00</td>
+        <td>Brass</td>
         <td>Baritone</td>
         <td>John Packer</td>
         <td>Silver</td>
@@ -38,6 +42,7 @@
     <tr>
         <td>O'Malley Bb Contrabass Trombone Bb/F</td>
         <td>3729.00</td>
+        <td>Brass</td>
         <td>Trombone</td>
         <td>O'Malley</td>
         <td>Laquer</td>
@@ -47,6 +52,7 @@
     <tr>
         <td>John Packer Rath Trombone JP231R</td>
         <td>1329.00</td>
+        <td>Brass</td>
         <td>Trombone</td>
         <td>John Packer</td>
         <td>Laquer</td>
@@ -56,6 +62,7 @@
     <tr>
         <td>Bach 42BOF F/Bb Trombone</td>
         <td>5001.00</td>
+        <td>Brass</td>
         <td>Trombone</td>
         <td>Bach</td>
         <td>Silver</td>
@@ -65,6 +72,7 @@
     <tr>
         <td>John Packer JP051 Bb Trumpet</td>
         <td>426.00</td>
+        <td>Brass</td>
         <td>Trumpet</td>
         <td>John Packer</td>
         <td>Yellow Brass</td>
@@ -74,6 +82,7 @@
     <tr>
         <td>The O'Malley "Strad Buster" Trumpet</td>
         <td>1895.00</td>
+        <td>Brass</td>
         <td>Trumpet</td>
         <td>O'Malley</td>
         <td>Silver</td>
@@ -83,6 +92,7 @@
     <tr>
         <td>The O'Malley Bb Rotary Trumpet</td>
         <td>1329.00</td>
+        <td>Brass</td>
         <td>Trumpet</td>
         <td>O'Malley</td>
         <td>Yellow Gold</td>
@@ -92,6 +102,7 @@
     <tr>
         <td>Jupiter 1600i Bb Trumpet</td>
         <td>3109.00</td>
+        <td>Brass</td>
         <td>Trumpet</td>
         <td>Jupiter</td>
         <td>Yellow Gold</td>
@@ -100,6 +111,7 @@
     </tr>
     <!-- <tr>
         <td>Name</td>
+        <td>Brass</td>
         <td>Price</td>
         <td>Type</td>
         <td>Brand</td>

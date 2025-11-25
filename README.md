@@ -1,1 +1,2 @@
-# TESD_1700_Server-side_Web_Development
+# TESD 1700: Server-side Web Development
+This contains all work done for the class TESD 1700. Each chapter folder holds assignments done fromt the reading material. The "Project" folder holds the ongoing assignment for the class.

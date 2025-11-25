@@ -1,42 +1,46 @@
 /* main Styles */
 main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(0, 430px));
+    gap: 10px;
 }
 
 /* Figure Styles */
 .container-product {
-    align-content: flex-end;
-    margin: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    margin: 15px 5px;
     padding: 15px;
-    border: 5px ridge #2b1714;
+    border: 5px ridge #422722;
 }
 
 figure {
-    display: flex;
-    flex-flow: column nowrap;
+    border-bottom: 2px solid #422722;
 }
 
 figure img {
-    padding-bottom: 15px;
-    border-bottom: 2px solid #2b1714;
+    padding: 15px auto; 
+    max-height: 220px;
 }
 
 figure figcaption {
-    margin: 15px auto 10px;
+    margin: 15px auto;
 }
 /* ===============
     Phone Devices
    =============== */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 480px) {
+    main {
+        display: block;
+    }
 }
 
 /* ===================
     Computers/Tablets
    =================== */
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 481px) {
     body {
         display: grid;
         grid-template-areas: 
