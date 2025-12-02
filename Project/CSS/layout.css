@@ -3,6 +3,11 @@ Orange: #E1341E
 Yellow: #E1951E
 Pink: #E11E69
 */
+:root {
+    --primary-bg-color: #422722;
+    --secondary-bg-color: #705c41;
+    /* #ca8e3a #4d3f2c*/
+}
 
 /* body Styles */
 body {
@@ -16,7 +21,7 @@ body {
 header {
     padding: 5px;
     color: white;
-    background: radial-gradient(circle at 10%, #422722, #4d3f2c);
+    background: radial-gradient(circle at 10%, var(--primary-bg-color), var(--secondary-bg-color));
 }
 
 header .header-logo {
@@ -61,8 +66,8 @@ main {
 /* aside Styles */
 aside {
     padding: 15px 15px;
-    border-right: 2px solid #422722;
-    box-shadow: 0px 0px 15px #422722;
+    border-right: 2px solid var(--primary-bg-color);
+    box-shadow: 0px 0px 15px var(--primary-bg-color);
 }
 
 /* footer Styles */
@@ -73,7 +78,7 @@ aside {
         align-items: stretch;
         padding: 10px;
         color: white;
-        background: radial-gradient(circle at 10%, #422722, #4d3f2c);
+        background: radial-gradient(circle at 10%, var(--primary-bg-color), var(--secondary-bg-color));
     }
 
     footer .nav-footer {
@@ -131,7 +136,7 @@ h3 {
 h4 {
     margin: 15px auto;
     padding: 0px 10px 5px;
-    border-bottom: 2px solid #422722;
+    border-bottom: 2px solid var(--primary-bg-color);
 }
 
 /* p Styles */
@@ -170,7 +175,7 @@ nav a:hover {
 /* form Styles */
 form {
     padding: 15px;
-    border: 2px solid #422722;
+    border: 2px solid var(--primary-bg-color);
     border-radius: 5px;
     background-color:#faedd7
 }
