@@ -20,7 +20,7 @@ class Page {
 
     public function DisplayButton($name, $url, $active=false) {
         if ($active) {
-            ?><a href="<?=$url?>"><?=$name?></a><?php
+            echo "<a href=\"$url\">$name</a>";
         }
     }
     public function DisplayNav($buttons) {
@@ -48,15 +48,7 @@ class Page {
                     <img src="../Project/Images/daves-music-store-logo.png" alt="Dave's Music Store Logo">
                     <h1>Dave's Music Store</h1>
                 </div>
-                <!-- <nav id="nav-header">
-                    <a href="index.php">Home</a>
-                    <a href="catalog.php">Brasswinds</a>
-                    <a href="catalog.php">Brand</a>
-                    <a href="catalog.php">Catalog</a>
-                    <a href="#">Service and Repair</a>
-                    <a href="cart.php">Cart</a>
-                </nav> -->
-                <?php $this->DisplayNav($this->btnNav);?>
+                <?=$this->DisplayNav($this->btnNav);?>
 
             </header>
         </body>
