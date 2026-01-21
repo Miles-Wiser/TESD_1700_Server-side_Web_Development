@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+a > div {
+    color: white;
+    background-color: #927545c0;
+}
+
+.section-preview {
+    flex: 1 1 25%;
+    margin: 25px 10px;
+    padding: 50px 0px;
+}
+
+#main-shop {
+    flex-basis: 100%;
+    background: #927545 url("../Images/landing-pg-piano.jpg") no-repeat center / cover;
+}
+
+#main-horns {
+    background: #927545 url("../Images/landing-pg-fhorn.jpg") no-repeat center / cover;
+}
+
+#main-woodwinds {
+    background: #927545 url("../Images/landing-pg-sax.jpg") no-repeat center / cover;
+}
+
+#main-electric {
+    background: #927545 url("../Images/landing-pg-electric.jpg") no-repeat center / cover;
+}
+
+/* ===============
+    Phone Devices
+   =============== */
+@media only screen and (max-width: 480px) {
+}
+
+/* ===================
+    Computers/Tablets
+   =================== */
+@media only screen and (min-width: 481px) {
+
+}
