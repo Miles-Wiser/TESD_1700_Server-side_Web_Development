@@ -9,46 +9,41 @@ $page->DisplayHead();
 
 ?>
 <main>
-        <div class="container-product">
-            <figure>
-                <img src="../Project/Databases-Info/om_student_bari.jpg" alt="O'Malley Student Baritone">
-                <figcaption>O'Malley Student 3/4 Baritone</figcaption>
-            </figure>
-            <div>
-                <p>$739.00</p>
-                <input class="btnAddToCart" type="submit" name="om-student-bari" value="Add To Cart">
-            </div>
-        </div>
-        <div class="container-product">
-            <figure>
-                <img src="../Project/Databases-Info/jp_marching_bari.jpg" alt="John Packer Marching Baritone">
-                <figcaption>John Packer Marching Baritone JP2053</figcaption>
-            </figure>
-            <div>
-                <p>$2201.00</p>
-                <input class="btnAddToCart" type="submit" name="jp-marching-bari" value="Add To Cart">
-            </div>
-        </div>
-        <div class="container-product">
-            <figure>
-                <img src="../Project/Databases-Info/om_Bb_trom.jpg" alt="O'Malley Bb ContraBass Trombone">
-                <figcaption>O'Malley Bb Contrabass Trombone Bb/F</figcaption>
-            </figure>
-            <div>
-                <p>$3729.00</p>
-                <input class="btnAddToCart" type="submit" name="om-contrabass-trom" value="Add To Cart">
-            </div>
-        </div>
-        <div class="container-product">
-            <figure>
-                <img src="../Project/Databases-Info/ju_1600i_trum.jpg" alt="Jupiter 1600i Bb Trumpet">
-                <figcaption>Jupiter 1600i Bb Trumpet</figcaption>
-            </figure>
-            <div>
-                <p>$3109.00</p>
-                <input class="btnAddToCart" type="submit" name="ju-1600i-trum" value="Add To Cart">
-            </div>
-        </div>
+        <?php
+        // Login Verification for Database
+        $db = new mysqli('localhost', 'root', 'root', 'music_store');
+        if (mysqli_connect_errno()) {
+            echo '<p>Error: could not connect to database.<br> Try again later.</p>';
+            exit;
+        }
+
+        // Pulls data from database
+        $query = "SELECT sku, product_name, price, product_image
+                  FROM product_catalog";
+        $stmt = $db->prepare($query);
+        $stmt->execute();
+        $stmt->store_result();
+        $stmt->bind_result($sku, $product_name, $price, $product_image);
+
+        // Print data to webpage
+        while($stmt->fetch()) {
+            echo "<div class='container-product'>
+                    <figure>
+                        <img src='$product_image' alt='$product_name'>
+                        <figcaption>$product_name</figcaption>
+                    </figure>
+                    <div>
+                        <p>$price</p>
+                        <input class='btnAddToCart' type='submit' name='$sku'>
+                    </div>
+                  </div>
+                ";
+        }
+
+        // Close Database
+        $stmt->free_result();
+        $db->close();
+        ?>
     </main>
 
     <aside>
@@ -145,7 +140,7 @@ $page->DisplayHead();
 
         <div class="filter">
             <h4>Price</h4>
-            <input id="price-text" name="price-text" type="text" size="4" maxlength="4" value="" max="9999" min="1">
+            <input id="price-text" name="price-text" type="text" size="4" maxlength="4" max="9999" min="1">
             <input id="price-range" name="price-range" type="range" max="9999" min="1">
         </div>
 
