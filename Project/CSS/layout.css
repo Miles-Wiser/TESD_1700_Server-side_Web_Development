@@ -172,14 +172,6 @@ nav a:hover {
     margin: 5px 0px;
 }
 
-/* form Styles */
-form {
-    padding: 15px;
-    border: 2px solid var(--primary-bg-color);
-    border-radius: 5px;
-    background-color:#faedd7
-}
-
 /* input Styles */
 input, label, button {
     margin: 10px 5px;

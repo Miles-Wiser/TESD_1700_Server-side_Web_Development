@@ -37,3 +37,4 @@ $page->DisplayHead();
 
 <?php
 $page->DisplayFooter();
+?>

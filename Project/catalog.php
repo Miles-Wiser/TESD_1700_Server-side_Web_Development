@@ -22,20 +22,24 @@ $page->DisplayHead();
                   FROM product_catalog";
         $stmt = $db->prepare($query);
         $stmt->execute();
-        $stmt->store_result();
         $stmt->bind_result($sku, $product_name, $price, $product_image);
 
         // Print data to webpage
         while($stmt->fetch()) {
             echo "<div class='container-product'>
+                  <form action='cart.php' method='post'>
                     <figure>
                         <img src='$product_image' alt='$product_name'>
                         <figcaption>$product_name</figcaption>
                     </figure>
                     <div>
-                        <p>$price</p>
-                        <input class='btnAddToCart' type='submit' name='$sku'>
+                        <p>$$price</p>
+                        <input type='hidden' name='sku' value='$sku'>
+
+                        <input type='number' name='qty' min='1' max='10'>
+                        <input class='btnAddToCart' type='submit' value='Add to Cart'>
                     </div>
+                  </form>
                   </div>
                 ";
         }
@@ -148,3 +152,4 @@ $page->DisplayHead();
     
 <?php
 $page->DisplayFooter();
+?>

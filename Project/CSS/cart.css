@@ -1,3 +1,36 @@
+/* Table Styles */
+td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 10px auto;
+}
+
+thead {
+    color: white;
+    background-color: var(--primary-bg-color);
+}
+
+/* This doesn't work on the table because it is applied before the table is created. */
+/* tbody tr:nth-child(2n+1) {
+    color: white;
+    background-color: var(--secondary-bg-color);
+} */
+
+th, td {
+    padding: 4px 7px;
+}
+
+td {
+    text-align: center;
+}
+
+tfoot td:first-child {
+    border: none;
+}
+
 
 /* ===============
     Phone Devices
