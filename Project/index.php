@@ -8,7 +8,7 @@ $page->DisplayHead();
 ?>
 
 <main>
-    <a href="catalog.html" id="main-shop" class="section-preview">
+    <a href="catalog.php" id="main-shop" class="section-preview">
         <div>
             <h2>Professional Quality</h2>
             <h3>Fit For Every Level</h3>

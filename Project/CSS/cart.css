@@ -31,6 +31,17 @@ tfoot td:first-child {
     border: none;
 }
 
+/* A Styles */
+#shop_now {
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+}
+
+#shop_now:hover {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.20);
+    text-decoration: underline;
+}
 
 /* ===============
     Phone Devices

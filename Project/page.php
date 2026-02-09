@@ -41,6 +41,7 @@ class Page {
             <link href="../Project/CSS/reset.css" rel="stylesheet">
             <link href="../Project/CSS/layout.css" rel="stylesheet">
             <link href="../Project/CSS/<?=$this->moreCSS?>" rel="stylesheet">
+            <script src="../Project/Scripts/cart.js" defer></script>
         </head>
         <body>
             <header>
@@ -68,9 +69,9 @@ class Page {
             <div class="nav-footer" id="container-collections">
                 <h3>Collections</h3>
                 <nav id="nav-collections">
-                    <a href="catalog.html">Brasswinds</a>
-                    <a href="catalog.html">Brand</a>
-                    <a href="catalog.html">Catalog</a>
+                    <a href="catalog.php">Brasswinds</a>
+                    <a href="catalog.php">Brand</a>
+                    <a href="catalog.php">Catalog</a>
                 </nav>
             </div>
             <div class="nav-footer" id="container-support">

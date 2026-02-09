@@ -27,7 +27,7 @@ $page->DisplayHead();
         // Print data to webpage
         while($stmt->fetch()) {
             echo "<div class='container-product'>
-                  <form action='cart.php' method='post'>
+                  <form onsubmit='return add_to_cart(this);' method='post'>
                     <figure>
                         <img src='$product_image' alt='$product_name'>
                         <figcaption>$product_name</figcaption>
@@ -35,7 +35,8 @@ $page->DisplayHead();
                     <div>
                         <p>$$price</p>
                         <input type='hidden' name='sku' value='$sku'>
-
+                        <input type='hidden' name='product_name' value='$product_name'>
+                        <input type='hidden' name='price' value='$price'>
                         <input type='number' name='qty' min='1' max='10'>
                         <input class='btnAddToCart' type='submit' value='Add to Cart'>
                     </div>
