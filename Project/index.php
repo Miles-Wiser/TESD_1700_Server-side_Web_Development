@@ -1,5 +1,5 @@
 <?php
-require "page.php";
+require "Scripts/page.php";
 
 $page = new Page();
 

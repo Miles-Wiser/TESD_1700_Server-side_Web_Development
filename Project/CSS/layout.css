@@ -86,7 +86,7 @@ aside {
         margin: 5px 20px;
         padding: 5px;
         border-radius: 10px 10px;
-        background-color: #927545;
+        background-color: #816b47;
         box-shadow: -5px -5px 25px rgba(255, 255, 255, .1);
     }
     footer .nav-footer nav {
@@ -185,15 +185,19 @@ input {
 /* ===============
     Phone Devices
    =============== */
-@media only screen and (max-width: 640px) {
-
-    /* header nav {
+@media only screen and (max-width: 480px) {
+    footer {
+        display: flex;
         flex-direction: column;
-    } */
+    }
+
+    footer .nav-footer {
+        margin: 15px 10px;
+    }
 }
 
 /* ===================
     Computers/Tablets
    =================== */
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 481px) {
 }

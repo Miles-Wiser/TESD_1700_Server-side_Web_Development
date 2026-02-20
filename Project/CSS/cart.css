@@ -43,6 +43,12 @@ tfoot td:first-child {
     text-decoration: underline;
 }
 
+#empty_cart{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 /* ===============
     Phone Devices
    =============== */

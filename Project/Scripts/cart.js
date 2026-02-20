@@ -93,8 +93,9 @@ function read_cart() {
     // Empty cart display
     if (grandTotal == 0) {
         return `
-        <p>Your cart is empty</p>
-        <p><a href='../Project/catalog.php' id='shop_now'>Shop</a> now.</p>
+        <div id="empty_cart">
+        <p>Your cart is empty <a href='catalog.php' id='shop_now'>Shop</a> now.</p>
+        </div>
         `
     }
     return tableHTML;

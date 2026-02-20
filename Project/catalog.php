@@ -1,5 +1,5 @@
 <?php
-require "page.php";
+require "Scripts/page.php";
 
 $page = new Page();
 $page->title = "$page->title | Catalog";
@@ -11,7 +11,9 @@ $page->DisplayHead();
 <main>
         <?php
         // Login Verification for Database
-        $db = new mysqli('localhost', 'root', 'root', 'music_store');
+        $dbUser = 'root';
+        $dbPass = 'root';
+        $db = new mysqli('localhost', $dbUser, $dbPass, 'music_store');
         if (mysqli_connect_errno()) {
             echo '<p>Error: could not connect to database.<br> Try again later.</p>';
             exit;
@@ -63,8 +65,8 @@ $page->DisplayHead();
                     <input id="equipment" name="equipment" type="checkbox">
                     <label for="equipment">Equipment</label>
                 </li>
-                <li><input id="percussion" name="percussion" type="checkbox">
-                    
+                <li>
+                    <input id="percussion" name="percussion" type="checkbox">
                     <label for="percussion">Percussion</label>
                 </li>
                 <li>

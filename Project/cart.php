@@ -1,5 +1,5 @@
 <?php
-require "page.php";
+require "Scripts/page.php";
 
 $page = new Page();
 $page->title = "$page->title | Cart";
@@ -12,7 +12,7 @@ $page->DisplayHead();
     <?php
     
     echo "<div id='table-container'>
-            <script src='../Project/Scripts/cart.js'></script>
+            <script src='Scripts/cart.js'></script>
             <script>print_cart();</script>
             </div>
         ";
